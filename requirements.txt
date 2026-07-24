@@ -1,0 +1,37 @@
+# CandidateOps Requirements
+# Core dependencies for the CandidateOps application
+
+# Web scraping and automation
+selenium>=4.15.0
+webdriver-manager>=4.0.1
+
+# Data handling
+pandas>=2.2.0
+openpyxl>=3.1.2
+
+# Configuration and settings
+pydantic>=2.6.3
+pydantic-settings>=2.2.1
+PyYAML>=6.0.1
+
+# Logging
+loguru>=0.7.2  # Optional, using standard library logging primarily
+
+# Utilities
+python-dotenv>=1.0.0
+tzdata>=2024.1
+
+# Testing (development dependencies)
+pytest>=8.2.0
+pytest-mock>=3.14.0
+pytest-cov>=5.0.0
+
+# Type checking (development)
+mypy>=1.8.0
+types-PyYAML>=6.0.12
+types-setuptools>=69.0.0
+
+# Code quality (development)
+black>=24.3.0
+flake8>=7.0.0
+isort>=5.13.2

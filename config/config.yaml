@@ -1,0 +1,45 @@
+# CandidateOps Configuration File
+# This file can be used alongside .env for configuration
+# Values in .env take precedence over this file
+
+app:
+  name: CandidateOps
+  version: "1.0.0"
+  debug: false
+
+database:
+  url: sqlite:///./candidate_ops.db
+  echo: false
+
+sap:
+  base_url: https://your-company.sap.com  # UPDATE THIS
+  login_endpoint: /login
+  career_endpoint: /career
+  timeout: 30
+  implicit_wait: 10
+
+excel:
+  template_path: ./templates/candidate_template.xlsx
+  output_path: ./output/candidates_tracking.xlsx
+  sheet_name: Candidates
+  id_column: CandidateID
+
+file:
+  base_output_dir: ./candidates_data/candidates
+  attachments_dir: attachments
+  max_filename_length: 255
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  console_enabled: true
+  file_enabled: true
+  file_path: ./logs/candidate_ops.log
+  max_bytes: 10485760  # 10 MB
+  backup_count: 5
+
+monitoring:
+  check_interval: 300  # 5 minutes
+  max_runtime_hours: 8
+  enable_notifications: false
