@@ -228,16 +228,6 @@ CandidateOps/
 
 ---
 
-## 🖼️ Screenshots (Placeholders)
-
-![Application Flow](assets/screenshots/application_flow.png)
-![Folder Structure](assets/screenshots/folder_structure.png)
-![Excel Output](assets/screenshots/excel_output.png)
-
-*Add real screenshots here after you run the demo.*
-
----
-
 ## 🔮 Future Improvements
 
 - [ ] **Real SAP implementation** – Selenium/web‑scraping tailored to your SAP Career portal
